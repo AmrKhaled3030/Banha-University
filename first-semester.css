@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  direction: rtl;
+  height: 100vh;
+  width: 250px;
+  position: absolute;
+  background: rgb(24, 111, 101, 0.4);
+  z-index: 1;
+  transition: .5s ease;
+  transform: translateX(-250px);
+}
+.container .head {
+  color: #fdfbec;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  background: linear-gradient(20deg, darkgreen ,green );
+  
+}
+ul {
+  width: 100%;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  width: 100%;
+}
+ul li a{
+  color: white;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: block;
+  position: relative;
+  transition: .3s;
+  overflow: hidden;
+}
+ul li:hover a {
+  background: white;
+  color: black;
+  letter-spacing: 5px;
+}
+input{
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+label span{
+  position: absolute;
+  right: -40px;
+  top: 30px;
+  font-size: 25px;
+  border-radius: 3px;
+  color: #fff;
+  padding: 3px 8px;
+  cursor: pointer;
+  background: black;
+  
+}
+
+#bars{
+  background: green;
+  
+}
+#check:checked ~ .container{
+  transform: translateX(0);
+}
+#check:checked ~.container #bars{
+  display: none;
+}
+/* ###################################################  */
+.header {
+ background: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url("img/pex.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .5s;
+  
+}
+
+#check:checked ~ .header{
+  filter: brightness(20%);
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 20px;
+  position: relative;
+  z-index: 0;
+}
+nav img{
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+nav img:hover{
+  transform: rotate(360deg)
+}
+.paragraph{
+  margin-left: 10px;
+}
+.paragraph,.paragraph p a{
+  padding: 6px 10px;
+  direction: rtl;
+  color: white;
+  font-size: 20px;
+  width: auto;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.text{
+  direction: rtl;
+  position: absolute;
+  width:90%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  
+}
+.text h1 {
+  letter-spacing: 20px;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 0 0 ;
+  animation-name: title1;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+.text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  animation-name: title2;
+  letter-spacing: 30px;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.text p {
+  font-size: 30px;
+  margin: 40px 0;
+}
+.btn{
+  color: #fff;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.btn:hover{
+  background: green;
+  border: green;
+  transition: 0.1s;
+  
+}
+@keyframes title1{
+  0%{
+    letter-spacing: 10px;
+  }
+  50%{
+    letter-spacing: 5px;
+  }
+  100%{
+    letter-spacing: 0px;
+  }
+}
+@keyframes title2{
+  0%{
+    letter-spacing: 25px;
+  }
+  50%{
+    letter-spacing: 20px;
+  }
+  75%{
+    letter-spacing: 10px;
+  }
+  100%{
+    letter-spacing: 0px;
+  }
+}
+#paragraph p a:hover {
+  background: white;
+  color: green;
+  text-decoration: none;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+
+.footer p{
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  color: black;
+  line-height: 5px;
+  
+}
+.social{
+    margin:5px 0 20px;
+}
+.social .fa{
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.social .fa-whatsapp{
+    color: green;
+}
+.social .fa-telegram{
+    color: skyblue;
+}
