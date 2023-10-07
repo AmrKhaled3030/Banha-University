@@ -98,7 +98,7 @@ label span{
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   padding: 5px 20px;
@@ -115,7 +115,7 @@ nav img:hover{
   transform: rotate(360deg)
 }
 .paragraph{
-  margin-left: 10px;
+  margin-right: 20px;
 }
 .paragraph,.paragraph p a{
   padding: 6px 10px;
@@ -243,4 +243,15 @@ td , th{
 }
 .social .fa-telegram{
     color: skyblue;
+}
+@media (max-width:700px){
+  .text h1{
+    font-size: 20px;
+  }
+  .text h2{
+    font-size: 15px;
+  }
+  .text p{
+    font-size: 10px;
+  }
 }
