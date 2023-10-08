@@ -163,6 +163,19 @@ nav img:hover{
   font-size: 30px;
   margin: 40px 0;
 }
+.btn {
+  color: #fff;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.btn:hover {
+  background: green;
+  border: rgb(0, 106, 255);
+  transition: 0.1s;
+}
 @keyframes title1{
   0%{
     letter-spacing: 10px;
