@@ -216,7 +216,25 @@ td , th{
 .table{
   background: rgba(4,9,30,0.4);
 }
+.prise a{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.prise a:hover{
+  color: white;
+}
+.count a{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.count a:hover{
+  color: white;
+}
 
+
+/*###########################################################*/
 .footer{
     display: flex;
     justify-content: center;
